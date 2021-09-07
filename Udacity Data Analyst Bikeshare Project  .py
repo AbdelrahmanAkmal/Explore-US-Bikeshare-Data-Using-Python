@@ -6,15 +6,7 @@
    "id": "ef8afee8-6f92-458e-af29-1413d72c08a8",
    "metadata": {},
    "outputs": [],
-   "source": [
-    "import time\n",
-    "import pandas as pd\n",
-    "import numpy as np\n",
-    "\n",
-    "CITY_DATA = {'chicago': 'chicago.csv',\n",
-    "              'new york city': 'new_york_city.csv',\n",
-    "              'washington': 'washington.csv'}"
-   ]
+   "source": []
   },
   {
    "cell_type": "code",
@@ -109,6 +101,14 @@
     }
    ],
    "source": [
+    "import time\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "\n",
+    "CITY_DATA = {'chicago': 'chicago.csv',\n",
+    "              'new york city': 'new_york_city.csv',\n",
+    "              'washington': 'washington.csv'}\n",
+    "\n",
     "def check_filters(input_str,input_type):\n",
     "    while True:\n",
     "        user_input = input(input_str)\n",
