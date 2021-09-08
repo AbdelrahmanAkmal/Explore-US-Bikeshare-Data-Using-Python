@@ -100,10 +100,12 @@ def load_data(city, month, day):
     return df
 
 def see_rawdata(raw_input_str,df):
+    """ Gives an option to the user to see 5 random rows of the raw data
+        if he responded with 'yes' """
     while True:
         user_input = input(raw_input_str).title()
         if user_input == 'Yes':
-            print(df.head(5))
+            print(df.sample(5))
             break
         elif user_input == 'No':
             break
